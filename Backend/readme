@@ -1,0 +1,37 @@
+localhost:8080/api/users?role=normal&sortBy=Hemant Kamthe&order=asc // getdata
+localhost:8080/api/users/1 //get 1 data
+localhost:8080/api/users/1  //put data 
+
+
+localhost:8080/api/stores
+localhost:8080/api/stores/3
+localhost:8080/api/stores?name=Star Kirana&sortBy=&order=desc
+
+
+localhost:8080/api/ratings/user/1
+localhost:8080/api/ratings/store/1
+ localhost:8080/api/ratings/store/1
+
+
+ normal user token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJoZW1hbnRAZ21haWwuY29tIiwicm9sZSI6Im5vcm1hbCIsImlhdCI6MTc1NDE0ODQ1NCwiZXhwIjoxNzU0MjM0ODU0fQ.lICN-9yLcbiwo8dR1X5RSpveC6Y9xO7SWVcyX8qm_Xg
+ {
+    "email":"hemant@gmail.com",
+    "password":"NewPass@123"
+}
+
+admin token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTQxNDk5MjEsImV4cCI6MTc1NDIzNjMyMX0.1p2BgkPonefGHHDF0SIFgpZMpFnTLKZ-kNI2b4TJKtg
+{
+    "email":"admin@gmail.com",
+    "password":"Admin@123"
+}
+
+
+store Owner Token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJzdG9yZU93bmVyQGdtYWlsLmNvbSIsInJvbGUiOiJzdG9yZSIsImlhdCI6MTc1NDE1MDYzMywiZXhwIjoxNzU0MjM3MDMzfQ.uKd9IUboqV90gubcNlepXXPPxNO9trd5CJUHmrRFJEA
+
+{
+    "email":"storeOwner@gmail.com",
+    "password":"storeOwner@123"
+}
+
+
+localhost:8080/api/dashboard/admin
