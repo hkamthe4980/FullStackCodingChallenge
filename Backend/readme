@@ -35,3 +35,33 @@ store Owner Token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJz
 
 
 localhost:8080/api/dashboard/admin
+
+
+
+
+
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255),
+    address TEXT,
+    role ENUM('admin', 'normal', 'store') DEFAULT 'normal'
+);
+
+CREATE TABLE stores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    address TEXT,
+    rating FLOAT DEFAULT 0
+);
+
+CREATE TABLE ratings (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    store_id INT,
+    rating FLOAT,
+    FOREIGN KEY (store_id) REFERENCES stores(id)
+);
