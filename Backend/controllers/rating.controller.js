@@ -58,6 +58,7 @@ exports.getRatingsByStore = (req, res) => {
     `;
     db.query(sql, [storeId], (err2, results) => {
       if (err2) return res.status(500).json({ error: err2 });
+      console.log(results);
       res.json(results);
     });
   });

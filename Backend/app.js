@@ -6,12 +6,13 @@ const userRoutes = require('./routes/user.routes');
 const storeRoutes = require('./routes/store.routes');
 const ratingRoutes = require('./routes/rating.routes');
 const dashboardRoutes = require('./routes/dashboard.routes');
+const ownerRoutes = require('./routes/owner.routes');
 
 
 
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
@@ -19,6 +20,6 @@ app.use('/api/users', userRoutes);
 app.use('/api/stores', storeRoutes);
 app.use('/api/ratings', ratingRoutes);
 app.use('/api/dashboard', dashboardRoutes);
-
+app.use('/api/owner', ownerRoutes);
 
 module.exports = app;

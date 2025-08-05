@@ -4,7 +4,7 @@ const db = require('../config/db');
 exports.getAdminDashboard = (req, res) => {
   if (req.user.role !== 'admin') {
     return res.status(403).json({ message: 'Access denied. Admins only.' });
-  }
+  }                    
 
   const totalUsers = `SELECT COUNT(*) AS userCount FROM users`;
   const totalStores = `SELECT COUNT(*) AS storeCount FROM stores`;

@@ -25,7 +25,6 @@ admin token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJhZG1pb
     "password":"Admin@123"
 }
 
-
 store Owner Token =eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiZW1haWwiOiJzdG9yZU93bmVyQGdtYWlsLmNvbSIsInJvbGUiOiJzdG9yZSIsImlhdCI6MTc1NDE1MDYzMywiZXhwIjoxNzU0MjM3MDMzfQ.uKd9IUboqV90gubcNlepXXPPxNO9trd5CJUHmrRFJEA
 
 {

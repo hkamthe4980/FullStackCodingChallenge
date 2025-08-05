@@ -13,3 +13,11 @@ exports.verifyToken = (req, res, next) => {
     res.status(401).json({ message: 'Invalid Token' });
   }
 };
+
+
+exports.isStoreOwner = (req, res, next) => {
+  if (req.user.role !== 'store') {
+    return res.status(403).json({ message: "Access denied. Not a Store Owner." });
+  }
+  next();
+};

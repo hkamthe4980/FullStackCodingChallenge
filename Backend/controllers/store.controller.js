@@ -2,6 +2,7 @@ const db = require('../config/db');
 
 // Add a new store
 exports.addStore = (req, res) => {
+  console.log("Add store request received", req.body);
   const { name, email, address, owner_id } = req.body;
 
   if (req.user.role !== 'admin') {
